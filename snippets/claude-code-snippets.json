@@ -1,0 +1,92 @@
+[
+  {
+    "name": "CC: New Feature (full cycle)",
+    "keyword": "/feature",
+    "text": "I want to implement a new feature in this project. The project is currently working — preserve all existing functionality.\n\nFeature:\n{cursor}\n\nFull development cycle:\n1. Review codebase and create a spec\n2. After spec approval — create a worktree and write a plan\n3. Use subagent-driven development for implementation\n4. Strictly follow TDD (red-green-refactor) at every step\n5. Run code review after each task\n6. On completion — propose merge options\n\nLet's go!"
+  },
+  {
+    "name": "CC: Bugfix",
+    "keyword": "/bugfix",
+    "text": "There's a bug in the project. Everything else should keep working — don't break existing functionality.\n\nBug description:\n{cursor}\n\nApproach:\n1. Reproduce the issue and confirm the broken behavior\n2. Write a failing test that captures the bug\n3. Fix the bug with minimal changes\n4. Verify the test passes and run the full test suite\n5. Check for similar issues elsewhere in the codebase"
+  },
+  {
+    "name": "CC: Refactor",
+    "keyword": "/refactor",
+    "text": "I want to refactor this project. All existing functionality must be preserved — no behavior changes.\n\nWhat to refactor:\n{cursor}\n\nApproach:\n1. Audit the current codebase — understand architecture, find issues\n2. Run security scan and code quality check\n3. Write a phased refactoring plan\n4. Ensure full test coverage BEFORE making changes\n5. Refactor step by step — verify tests pass after each step\n6. Final review: run the full test suite, check for regressions"
+  },
+  {
+    "name": "CC: New Project",
+    "keyword": "/newproject",
+    "text": "I want to create a new project from scratch.\n\nProject idea:\n{cursor}\n\nLet's go through the full setup:\n1. Brainstorm the architecture — propose options and tradeoffs\n2. Create an architectural blueprint and document key decisions (ADR)\n3. Set up the project structure, Docker, CI/CD from day one\n4. Write the initial CLAUDE.md with project conventions\n5. Implement the core functionality with TDD\n6. Run a security review before the first commit"
+  },
+  {
+    "name": "CC: Write Tests",
+    "keyword": "/tests",
+    "text": "I need to add tests to this project. Don't change any existing code — only add tests.\n\nWhat to cover:\n{cursor}\n\nApproach:\n1. Analyze the codebase and identify untested areas\n2. Prioritize: critical paths first, then edge cases\n3. Write unit tests, then integration tests\n4. Aim for meaningful coverage, not just numbers\n5. Report: what's covered, what's still missing, what's hard to test and why"
+  },
+  {
+    "name": "CC: Code Review",
+    "keyword": "/review",
+    "text": "Review the current branch/changes. Focus on:\n{cursor}\n\nCheck for:\n- Correctness and edge cases\n- Security vulnerabilities\n- Performance issues\n- Code style and readability\n- Test coverage gaps\n- Architecture concerns\n\nFor each issue: severity (critical/warning/nit), location, explanation, and suggested fix."
+  },
+  {
+    "name": "CC: Onboarding",
+    "keyword": "/onboard",
+    "text": "I need to understand this project quickly. Give me a structured overview:\n\n1. Tech stack and key dependencies\n2. Project structure — what lives where\n3. Architecture: main components, data flow, external integrations\n4. How to run locally (dev server, tests, build)\n5. Key patterns and conventions used\n6. Potential pain points or tech debt\n\nBe specific — reference actual files and directories.{cursor}"
+  },
+  {
+    "name": "CC: Documentation",
+    "keyword": "/docs",
+    "text": "Write documentation for this project.\n\nFocus on:\n{cursor}\n\nRequirements:\n- Clear, concise, practical — not boilerplate\n- Include real code examples from the actual codebase\n- Cover setup, usage, architecture, and API reference as relevant\n- Add a troubleshooting section for common issues\n- Write for developers who will maintain this code"
+  },
+  {
+    "name": "CC: Performance Optimization",
+    "keyword": "/perf",
+    "text": "I want to optimize performance of this project. Don't break existing functionality.\n\nProblem area:\n{cursor}\n\nApproach:\n1. Profile and identify actual bottlenecks — no premature optimization\n2. Propose specific optimizations with expected impact\n3. Implement changes one at a time\n4. Measure before/after for each change\n5. Verify all tests still pass"
+  },
+  {
+    "name": "CC: Deploy & Docker",
+    "keyword": "/deploy",
+    "text": "I want to set up or optimize the deployment pipeline for this project.\n\nCurrent situation:\n{cursor}\n\nCover:\n- Dockerfile: multi-stage build, minimal image, proper caching\n- docker-compose for local dev\n- CI/CD pipeline (build, test, deploy stages)\n- Environment variables and secrets management\n- Health checks and rollback strategy"
+  },
+  {
+    "name": "CC: Cleanup",
+    "keyword": "/cleanup",
+    "text": "Clean up this project. Don't change any functionality.\n\nFocus:\n{cursor}\n\nCheck and fix:\n- Remove dead code, unused imports, orphaned files\n- Clean up Docker layers, reduce image size\n- Optimize .gitignore, remove committed artifacts\n- Clean caches, temp files, build artifacts\n- Fix inconsistent formatting and naming\n- Update outdated dependencies (minor/patch only, verify tests)"
+  },
+  {
+    "name": "CC: Security Audit",
+    "keyword": "/security",
+    "text": "Run a security audit on this project.\n\nScope:\n{cursor}\n\nCheck:\n- OWASP Top 10 vulnerabilities\n- Dependency vulnerabilities (outdated packages, known CVEs)\n- Secrets and credentials in code or config\n- Input validation and injection risks\n- Authentication and authorization issues\n- CORS, CSRF, XSS protection\n\nFor each finding: severity, location, impact, and fix."
+  },
+  {
+    "name": "CC: Database Migration",
+    "keyword": "/migrate",
+    "text": "I need to make database changes. The migration must be safe and reversible.\n\nChanges needed:\n{cursor}\n\nApproach:\n1. Write the migration with a rollback plan\n2. Ensure zero-downtime compatibility (no breaking the running app)\n3. Handle data migration if needed\n4. Test migration and rollback locally\n5. Update models/schemas to match"
+  },
+  {
+    "name": "CC: API Design",
+    "keyword": "/api",
+    "text": "I need to design or extend an API.\n\nRequirements:\n{cursor}\n\nCover:\n- Endpoint design: RESTful naming, proper HTTP methods and status codes\n- Request/response schemas with validation\n- Authentication and authorization\n- Error handling (consistent error format)\n- Pagination, filtering, sorting where relevant\n- Write tests for each endpoint"
+  },
+  {
+    "name": "CC: Quick Fix (minimal change)",
+    "keyword": "/quickfix",
+    "text": "Make a small, targeted fix. Minimal changes only — touch as few files as possible.\n\nWhat to fix:\n{cursor}"
+  },
+  {
+    "name": "CC: Explain Code",
+    "keyword": "/explain",
+    "text": "Explain how this part of the codebase works. Be specific — reference actual code.\n\nWhat to explain:\n{cursor}\n\nI want to understand: what it does, how it works, why it's built this way, and what the key edge cases are."
+  },
+  {
+    "name": "CC: Plan Only (no coding)",
+    "keyword": "/plan",
+    "text": "Don't write any code yet. Just create a detailed implementation plan.\n\nTask:\n{cursor}\n\nThe plan should include:\n- Scope and approach\n- Files to create/modify\n- Step-by-step breakdown\n- Risks and tradeoffs\n- Estimated complexity per step"
+  },
+  {
+    "name": "CC: Continue",
+    "keyword": "/continue",
+    "text": "Continue where you left off. Review what's been done so far, check for completeness, and proceed with the next steps.{cursor}"
+  }
+]
