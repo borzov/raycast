@@ -28,7 +28,7 @@ Trigger: `!keyword`
 
 ### Claude Code
 
-Count: 18 | File: [`claude-code-snippets.json`](claude-code-snippets.json)
+Count: 18 | File: [`claude-code.json`](claude-code.json) | Russian: [`claude-code.ru.json`](claude-code.ru.json)
 
 Workflow prompt snippets for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Type a trigger keyword and get a structured prompt with `{cursor}` placeholder for your input.
 

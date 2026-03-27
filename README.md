@@ -1,4 +1,4 @@
-# raycast
+# Raycast
 
 Personal Raycast configuration and resources.
 

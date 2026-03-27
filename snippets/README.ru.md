@@ -28,7 +28,7 @@
 
 ### Claude Code
 
-Количество: 18 | Файл: [`claude-code-snippets.json`](claude-code-snippets.json)
+Количество: 18 | Файл: [`claude-code.json`](claude-code.json) | На русском: [`claude-code.ru.json`](claude-code.ru.json)
 
 Шаблоны рабочих промптов для [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Наберите триггер и получите структурированный промпт с плейсхолдером `{cursor}` для вашего ввода.
 
